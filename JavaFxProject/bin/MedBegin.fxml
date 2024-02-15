@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="424.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MedBeginController">
+   <children>
+      <Button fx:id="btnSearchPatient" layoutX="39.0" layoutY="70.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="147.0" text="Buscar Paciente" />
+      <Button fx:id="btnHconsul" layoutX="39.0" layoutY="144.0" mnemonicParsing="false" text="Historico de consultas" />
+      <Button fx:id="btnCad" layoutX="39.0" layoutY="211.0" mnemonicParsing="false" onAction="#RegisPatiente" prefHeight="30.0" prefWidth="147.0" text="cadastrar paciente" />
+      <TableView layoutX="264.0" layoutY="85.0" prefHeight="200.0" prefWidth="87.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnExit" layoutX="280.0" layoutY="361.0" mnemonicParsing="false" text="Sair" />
+      <Label layoutX="280.0" layoutY="58.0" text="Agenda">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
